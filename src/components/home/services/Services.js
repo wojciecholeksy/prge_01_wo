@@ -11,9 +11,9 @@ function Services() {
           <Link to="map">
             <div className="services_obj">Mapa</div>
           </Link>
-
-          <Link to:dashboard></Link>
-          <div className="services_obj">Baza danych</div>
+          <Link to="Dashboard">
+            <div className="services_obj">Baza danych</div>
+          </Link>
         </div>
         <div className="obrazki">obrazki</div>
       </div>
