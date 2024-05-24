@@ -24,10 +24,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const imie = "tomasz";
+
   return (
     <div className="App">
       <RouterProvider router={router} />
     </div>
   );
 }
+
 export default App;
