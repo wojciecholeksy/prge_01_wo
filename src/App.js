@@ -1,9 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./components/home/Home";
-import Services from "./components/home/services/Services";
+import Services from "./components/services/Services";
 import Map from "./components/map/Map";
-
+import Dashboard from "./components/dashboard/Dashboard";
 const router = createBrowserRouter([
   {
     path: "/",
