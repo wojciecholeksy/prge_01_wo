@@ -90,6 +90,7 @@ import "leaflet/dist/leaflet.css";
 import axios from "axios";
 import { GeoJSON } from "react-leaflet";
 import { wojewodztwa_json } from "./dane";
+import MarkerPlacement from "./MarkerPlacement";
 
 function Map() {
   const [wojewodztwa, setwojewodztwa] = useState(null);
@@ -100,7 +101,7 @@ function Map() {
       layer.bindPopup(`
         <hi>Dane wojewodztwa</h1>
         <strong>Nazwa: </strong> ${feature.properties.jpt_nazwa_}</br>
-        <strong>Powierzchnia: </strong> ${feature.properties.jpt_powier}
+        <strong>Powierzchnia: </strong> ${feature.properties.jpt_powier} <strong>m^2 </strong>
         <img src=${feature.properties.img_source} alt="Lamp" width="32" height="32"`);
     }
   };
@@ -148,6 +149,7 @@ function Map() {
               ""
             )}
           </LayersControl.Overlay>
+          <MarkerPlacement></MarkerPlacement>
         </LayersControl>
       </MapContainer>
     </div>
