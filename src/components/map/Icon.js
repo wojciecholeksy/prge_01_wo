@@ -1,10 +1,10 @@
 import L, { tooltip } from "leaflet";
-import bank from "./bank.jpg";
+import bank from "./bank.png";
 
 const LeafIcon = L.Icon.extend({
-  option: {
-    iconSize: [100, 100],
-    iconAnchor: [50, 0],
+  options: {
+    iconSize: [50, 50],
+    iconAnchor: [25, 25],
     tooltipAnchor: [0, 0],
   },
 });
